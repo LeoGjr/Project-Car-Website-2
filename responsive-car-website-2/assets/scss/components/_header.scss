@@ -1,0 +1,76 @@
+/*=============== HEADER & NAV ===============*/
+.header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color: transparent;
+   z-index: var(--z-fixed);
+}
+
+.nav{
+   position: relative;
+   height: var(--header-height);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__logo,
+   &__link{
+      color: var(--white-color);
+      font-weight: var(--font-semi-bold);
+   }
+   &__toggle,
+   &__close{
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--white-color);
+      border-radius: 50%;
+      font-size: 1.25rem;
+      cursor: pointer;
+   }
+   &__menu{
+      position: fixed;
+      top: 0;
+      right: -100%;
+      background-color: hsla(210, 8%, 8%, .7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      width: 80%;
+      height: 100%;
+      padding: 7rem 3.5rem 3.5rem;
+      transition: right .4s;
+   }
+   &__list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 3rem;
+   }
+   &__close{
+      position: absolute;
+      top: .8rem;
+      right: 1.5rem;
+   }
+}
+
+
+/* Show menu */
+.show-menu{
+   right: 0;
+}
+
+/* Add blur header */
+.blur-header::after {
+   content: "";
+   position: absolute;
+   width: 1000%;
+   height: 100%;
+   background-color: hsla(210, 8%, 8%, .2);
+   backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+   top: 0;
+   left: 0;
+   z-index: -1;
+}

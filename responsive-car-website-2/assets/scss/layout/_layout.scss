@@ -1,0 +1,21 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container{
+   max-width: 1120px;
+   margin-inline: 1.5rem;
+}
+
+.main{
+   overflow: hidden;
+}
+
+.car__orange{
+   --color-car: var(--orange-color);
+}
+
+.car__green{
+   --color-car: var(--green-color);
+}
+ 
+.car__blue{
+   --color-car: var(--blue-color);
+}

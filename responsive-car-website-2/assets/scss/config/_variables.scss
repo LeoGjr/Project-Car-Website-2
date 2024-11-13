@@ -1,0 +1,42 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@100..900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+   --header-height: 3.5rem;
+
+   /*========== Colors ==========*/
+   /*Color mode HSL(hue, saturation, lightness)*/
+   --orange-color: hsl(36, 90%, 54%);
+   --green-color: hsl(166, 90%, 40%);
+   --blue-color: hsl(204, 90%, 50%);
+   --white-color: hsl(0, 0%, 100%);
+   --black-color: hsl(210, 8%, 8%);
+
+   /*========== Font and typography ==========*/
+   /*.5rem = 8px | 1rem = 16px ...*/
+   --body-font: "Montserrat", sans-serif;
+   --second-font: "Dancing Script", cursive;
+
+   --biggest-font-size: 5rem;
+   --big-font-size: 2rem;
+   --normal-font-size: .938rem;
+   --small-font-size: .813rem;
+
+   // Responsive typography
+   @media screen and (min-width: 1150px){
+      --biggest-font-size: 15rem;
+      --big-font-size: 6rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+   }
+
+	/*========== Font weight ==========*/
+   --font-regular: 400;
+   --font-semi-bold: 600;
+   --font-bold: 700;
+
+	/*========== z index ==========*/
+   --z-tooltip: 10;
+   --z-fixed: 100;
+}
